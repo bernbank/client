@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BernBank</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+      <link href="bower_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+    <!-- build:js -->
+      <script src="app/require.config.js"></script>
+      <script data-main="app/startup" src="bower_modules/requirejs/require.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--<nav-bar params="route: route"></nav-bar>-->
+    <div id="page" class="container" data-bind="component: { name: route().page, params: route }"></div>
+  </body>
+  <footer>
+	<p style="color: black; margin:5px;"><span>Designed by volunteers with <a href="https://coders.forsanders.com" style="color: white;">Coders for Sanders</a></span><span class="pull-right">Find out more at: <a href="https://www.berniesanders.com" style="color: white;">BernieSanders.com</a></span></p>
+</footer>
+</html>

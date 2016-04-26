@@ -1,0 +1,106 @@
+.bernie-ltblue {
+	color: #147FD7;
+}
+
+.bernie-blue {
+	color: #0073DA;
+}
+
+.bernie-red {
+	color: #EF3C37;
+}
+
+.bernie-grey {
+	color: #A6B6C6;
+}
+
+.bernie-ltgrey {
+	color: #EDF0F7;
+}
+
+.green {
+	color: rgb(143,203,143);
+}
+
+.axis text {
+   fill: #147FD7;
+}
+
+body {
+	background: repeating-linear-gradient(
+  -45deg,
+  #2186d9,
+  #2186d9 3px,
+  #3e96de 3px,
+  #3e96de 6px
+);
+}
+
+p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+h4 {
+	font-family: Helvetica, sans-serif;
+	font-variant: small-caps;
+	font-weight:600;
+}
+
+a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #EF3C37;
+}
+
+ ul {
+ 	list-style-type: none;
+ 	color: #147FD7;
+}
+
+ li {
+ 	padding-top: .25em;
+ 	padding-left: 0;
+ 	text-indent: -1.5em;
+}
+li:before {
+    content: "\f192";
+    font-family: FontAwesome;
+    color: red; /* or whatever color you prefer */
+    margin-right: .4em;
+}
+
+hr.hr-blue {
+    height: 2px;
+    background:#147FD7;
+    border-radius: 3px;
+}
+
+hr.hr-green {
+    height: 2px;
+    background: rgb(143,203,143);
+    border-radius: 3px;
+}
+
+path { 
+    stroke: #147FD7;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #A6B6C6;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+#page {
+	margin-top: 0px;
+}
