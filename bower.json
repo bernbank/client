@@ -1,6 +1,6 @@
 {
   "name": "bernbank",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
     "bootstrap": "~4.*",
@@ -8,8 +8,9 @@
     "hasher": "~1.2.0",
     "requirejs": "~2.1.11",
     "requirejs-text": "~2.0.10",
+    "jquery": "^2",
     "knockout": "^3.4.0",
-    "knockout-projections": "~1.1.0-pre",
+    "knockout-projections": "^1",
     "knockout-validation": "^2.0.3"
   }
 }
