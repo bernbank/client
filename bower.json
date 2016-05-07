@@ -11,6 +11,7 @@
     "jquery": "^2",
     "knockout": "^3.4.0",
     "knockout-projections": "^1",
-    "knockout-validation": "^2.0.3"
+    "knockout-validation": "^2.0.3",
+    "moment": "^2.13.0"
   }
 }

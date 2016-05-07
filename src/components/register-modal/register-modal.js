@@ -3,8 +3,11 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 	function RegisterModal(params) {
 		this.baseURL = params.baseURL;
 		this.threshold = params.threshold;
-		
-		ko.validation.init({ insertMessages : false });
+		this.slider = ko.observable(1);
+
+		ko.validation.init({
+			insertMessages : false
+		});
 
 		this.userEmail = ko.observable('').extend({
 			required : true,
@@ -18,9 +21,18 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 		var errors = ko.validation.group(this);
 
 		if (errors().length === 0) {
-			$.post(this.baseURL + 'pledges/', {
-				email : this.userEmail(),
-				amount : "1"
+			$.ajax({
+				method : "PUT",
+				crossDomain : true,
+				contentType : 'application/json',
+				dataType : "json",
+				url : this.baseURL + 'pledges/' + this.userEmail(),
+				data : {
+					email : this.userEmail(),
+					amount : this.slider()
+				}
+			}).done(function(data) {
+				console.log(data);
 			});
 			$("#newPledge").modal('hide');
 		} else {
@@ -34,4 +46,4 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 		template : templateMarkup
 	};
 
-}); 
+});

@@ -1,6 +1,6 @@
 {
   "name": "bernbank",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "devDependencies": {
     "gulp": "~3.9.1",
     "gulp-requirejs-bundler": "^0.1.1",
