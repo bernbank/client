@@ -17,17 +17,64 @@
                         <p class="subhead">
                         Yesterday, a 1&cent; pledge would have totaled <!--CHANGE THIS TO A VARIABLE--> <b>$1.40</b>.
                         </p>
-						<ul class="homepoints card-text text-xs-left">
-                            <li>
-								Donate here to <b>double</b> the impact of your donation.
-							</li>
-                            <li>
-								Every donation will increase the amount of volunteers by giving them a direct incentive.
-							</li>
-                            <li>
-                                If 1/10 of one day's donors donated through here, <i>anyone</i> could bring in <b>$10</b> by spending 30 minutes making calls.
-							</li>
-						</ul>
+                        
+                        <div class="col-xs-12">
+							<ul class="homepoints card-text text-xs-left col-xs-6">
+								<li>
+									Donate here to <b>double</b> the impact of your donation.
+								</li>
+								<li>
+									Every donation will increase the amount of volunteers by giving them a direct incentive.
+								</li>
+								<li>
+									If 1/10 of one day's donors donated through here, <i>anyone</i> could bring in <b>$10</b> by spending 30 minutes making calls.
+								</li>
+							</ul>
+							<div class="col-xs-6">
+
+								<div class="donate-stats">
+									<div class="row">
+										<div class="bernie-ltblue">
+											<div class="col-xs-4">
+												<p class="card-text">
+													Individual Pledges
+												</p>
+											</div>
+										</div>
+										<div class="green">
+											<div class="col-xs-4">
+												<p class="card-text">
+													Pledged Yesterday
+												</p>
+											</div>
+											<div class="col-xs-4">
+												<p class="card-text">
+													Total Contributions
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="row donate-stats-numbers">
+										<div class="bernie-ltblue">
+											<div class="col-xs-4">
+												<h4 class="" data-bind="text: pledgesTotal"></h4>
+											</div>
+										</div>
+										<div class="green">
+											<div class="col-xs-4">
+												<h4 class="" data-bind="text: prevRaised"></h4>
+											</div>
+											<div class="col-xs-4">
+												<h4 class="" data-bind="text: raised"></h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							
+							</div>
+						</div>
+						
                         <hr class="pledgetocall"/>
                         <a href="http://berniepb.com" class="btn btn-lg btn-danger">MAKE CALLS</a>
 						<br>
