@@ -106,8 +106,9 @@ path {
 }
 
 .pledgebtn {
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.4em;
+    font-family: 'Raleway', sans-serif;
 }
 
 .bernbanklogo {
@@ -116,8 +117,22 @@ path {
 }
 
 .tagline {
-    font-weight: 800;
+    /*font-weight: 600;
     font-size: 1.4em;
     margin: 15px;
     color: #147FD7;
+    font-family: 'Playfair Display SC', serif;*/
+    font-weight: 400;
+    font-size: 1.4em;
+    margin: 15px;
+    color: #147FD7;
+    font-family: 'Raleway', sans-serif;
+}
+
+.homepoints {
+    font-family: 'Lora', serif;
+}
+
+.pledgetocall {
+    color:#147FD7;
 }
