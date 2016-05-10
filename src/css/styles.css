@@ -125,16 +125,26 @@ path {
     font-family: 'Playfair Display SC', serif;*/
     font-weight: 500;
     font-size: 1.5em;
-    margin: 15px;
+    margin: 25px;
     color: #147FD7;
     font-family: 'Raleway', sans-serif;
 }
 
 .homepoints {
     font-family: 'Lora', serif;
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 
 .pledgetocall {
     color:#147FD7;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.subhead {
+    font-weight: 500;
+    font-size: 1.25em;
+    margin: 25px;
+    color: #147FD7;
+    font-family: 'Raleway', sans-serif;
 }
