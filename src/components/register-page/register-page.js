@@ -15,9 +15,14 @@ define(["knockout", "text!./register.html", "jquery", 'knockout-validation'], fu
 		});
 		this.errors = ko.observableArray([]);
 	}
-	
+
+
 	Register.prototype.postPledge = function() {
 		var errors = ko.validation.group(this);
+		var data = {
+			email : this.userEmail(),
+			amount : this.slider()
+		};
 
 		if (errors().length === 0) {
 			$.ajax({
@@ -26,15 +31,11 @@ define(["knockout", "text!./register.html", "jquery", 'knockout-validation'], fu
 				contentType : 'application/json',
 				dataType : "json",
 				url : this.baseURL + 'pledges/' + this.userEmail(),
-				data : {
-					email : this.userEmail(),
-					amount : this.slider()
-				}
+				data : JSON.stringify(data)
 			}).done(function(data) {
 				console.log(data);
 			});
-			history.back();
-			return false;
+			$("#newPledge").modal('hide');
 		} else {
 			this.errors(errors());
 			return false;

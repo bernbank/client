@@ -2,7 +2,6 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 
 	function LineGraph(params) {
 		params.hist.subscribe(function(data) {
-			console.log(data);
 			var x = data.length;
 			if(x>10){
 				x--;
@@ -12,7 +11,7 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 		});
 
 		function Draw(data) {
-			console.debug(data);
+			//console.debug(data);
 
 			var margin = {
 				top : 40,
