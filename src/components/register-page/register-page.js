@@ -26,7 +26,7 @@ define(["knockout", "text!./register.html", "jquery", 'knockout-validation'], fu
 
 		if (errors().length === 0) {
 			$.ajax({
-				method : "PUT",
+				method : "POST",
 				crossDomain : true,
 				contentType : 'application/json',
 				dataType : "json",

@@ -25,7 +25,7 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 
 		if (errors().length === 0) {
 			$.ajax({
-				method : "PUT",
+				method : "POST",
 				crossDomain : true,
 				contentType : 'application/json',
 				dataType : "json",
