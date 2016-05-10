@@ -23,17 +23,17 @@
 }
 
 .axis text {
-   fill: #147FD7;
+	fill: #147FD7;
 }
 
 body {
 	background: repeating-linear-gradient(
-  -45deg,
-  #2186d9,
-  #2186d9 3px,
-  #3e96de 3px,
-  #3e96de 6px
-);
+	-45deg,
+	#2186d9,
+	#2186d9 3px,
+	#3e96de 3px,
+	#3e96de 6px
+	);
 }
 
 p {
@@ -48,7 +48,7 @@ p {
 h4 {
 	font-family: Helvetica, sans-serif;
 	font-variant: small-caps;
-	font-weight:600;
+	font-weight: 600;
 }
 
 a {
@@ -58,48 +58,47 @@ a {
 	color: #EF3C37;
 }
 
- ul {
- 	list-style-type: none;
- 	color: #147FD7;
+ul {
+	list-style-type: none;
+	color: #147FD7;
 }
 
 li {
- 	padding-top: .25em;
- 	padding-left: 0;
- 	text-indent: -1.5em;
+	padding-top: .25em;
+	padding-left: 0;
+	text-indent: -1.5em;
 }
 
 li:before {
-    content: "\f192";
-    font-family: FontAwesome;
-    color: red;
-    margin-right: .4em;
+	content: "\f192";
+	font-family: FontAwesome;
+	color: red;
+	margin-right: .4em;
 }
 
 hr.hr-blue {
-    height: 2px;
-    background:#147FD7;
-    border-radius: 3px;
+	height: 2px;
+	background: #147FD7;
+	border-radius: 3px;
 }
 
 hr.hr-green {
-    height: 2px;
-    background: rgb(143,203,143);
-    border-radius: 3px;
+	height: 2px;
+	background: rgb(143,203,143);
+	border-radius: 3px;
 }
 
-path { 
-    stroke: #147FD7;
-    stroke-width: 2;
-    fill: none;
+path {
+	stroke: #147FD7;
+	stroke-width: 2;
+	fill: none;
 }
 
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #A6B6C6;
-    stroke-width: 1;
-    shape-rendering: crispEdges;
+.axis path, .axis line {
+	fill: none;
+	stroke: #A6B6C6;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
 }
 
 #page {

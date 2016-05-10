@@ -1,8 +1,8 @@
-define(['knockout', 'text!./register-modal.html', 'knockout-validation'], function(ko, templateMarkup) {
+define(["knockout", "text!./register.html", "jquery", 'knockout-validation'], function(ko, templateMarkup, $) {
 
-	function RegisterModal(params) {
-		this.baseURL = params.baseURL;
-		this.threshold = params.threshold;
+	function Register(route) {
+		this.baseURL = "http://bernbank.com/api/";
+		this.threshold = "50";
 		this.slider = ko.observable(1);
 
 		ko.validation.init({
@@ -15,8 +15,8 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 		});
 		this.errors = ko.observableArray([]);
 	}
-
-	RegisterModal.prototype.postPledge = function() {
+	
+	Register.prototype.postPledge = function() {
 		var errors = ko.validation.group(this);
 
 		if (errors().length === 0) {
@@ -33,7 +33,8 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 			}).done(function(data) {
 				console.log(data);
 			});
-			$("#newPledge").modal('hide');
+			history.back();
+			return false;
 		} else {
 			this.errors(errors());
 			return false;
@@ -41,7 +42,7 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 	};
 
 	return {
-		viewModel : RegisterModal,
+		viewModel : Register,
 		template : templateMarkup
 	};
 

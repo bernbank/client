@@ -18,7 +18,8 @@ var requireJsRuntimeConfig = vm.runInNewContext(fs.readFileSync('src/app/require
             'requireLib',
             'components/home-page/home',
             'components/line-graph/line-graph',
-            'components/register-modal/register-modal'
+            'components/register-modal/register-modal',
+            'components/register-page/register-page'
         ],
         insertRequire: ['app/startup'],
         bundles: {
@@ -38,7 +39,7 @@ gulp.task('js', function () {
 
 // Concatenates CSS files, rewrites relative paths to Bootstrap fonts, copies Bootstrap fonts
 gulp.task('css', function () {
-    var bowerCss = gulp.src('src/bower_modules/bootstrap-4/css/bootstrap.min.css'),
+    var bowerCss = gulp.src('src/bower_modules/bootstrap/dist/css/bootstrap.min.css'),
         appCss = gulp.src('src/css/*.css'),
         combinedCss = es.concat(bowerCss, appCss).pipe(concat('css.css'));
         //fontFiles = gulp.src('./src/bower_modules/components-bootstrap/fonts/*', { base: './src/bower_modules/components-bootstrap/' });

@@ -7,6 +7,8 @@ define(['jquery', 'knockout', './router', 'bootstrap', 'knockout-projections'], 
 
   ko.components.register('register-modal', { require: 'components/register-modal/register-modal' });
 
+  ko.components.register('register-page', { require: 'components/register-page/register-page' });
+
   // [Scaffolded component registrations will be inserted here. To retain this feature, don't remove this comment.]
 
   // Start the application

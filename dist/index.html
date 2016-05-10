@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BernBank</title>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css.css">
-    <script src="scripts.js"></script>
-  </head>
-  <body>
-    <!--<nav-bar params="route: route"></nav-bar>-->
-    <div id="page" class="container" data-bind="component: { name: route().page, params: route }"></div>
-  </body>
-  <footer>
-	<p style="color: black; margin:5px;"><span>Designed by volunteers with <a href="https://coders.forsanders.com" style="color: white;">Coders for Sanders</a></span><span class="pull-right">Find out more at: <a href="https://www.berniesanders.com" style="color: white;">BernieSanders.com</a></span></p>
-</footer>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BernBank</title>
+		<link rel="stylesheet" href="css.css">
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div class="text-xs-center">
+			<p style="border-radius: 3px"><img src="img/logoisolated2.png" height="120" />
+			</p>
+		</div>
+		<!--<nav-bar params="route: route"></nav-bar>-->
+		<div id="page" class="container" data-bind="component: { name: route().page, params: route }"></div>
+	</body>
+	<footer>
+		<p style="color: black; margin:5px;">
+			<span>Designed by volunteers with <a href="https://coders.forsanders.com" style="color: white;">Coders for Sanders</a></span><span class="pull-right">Find out more at: <a href="https://www.berniesanders.com" style="color: white;">BernieSanders.com</a></span>
+		</p>
+	</footer>
 </html>

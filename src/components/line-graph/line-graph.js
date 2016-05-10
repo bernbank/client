@@ -2,6 +2,7 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 
 	function LineGraph(params) {
 		params.hist.subscribe(function(data) {
+			console.log(data);
 			var x = data.length;
 			if(x>10){
 				x--;
@@ -29,7 +30,7 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 
 			var y = d3.scale.linear().domain([0, max]).range([height - margin.top - margin.bottom, 0]);
 
-			var xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(d3.time.days, 1).tickFormat(d3.time.format('%a %d')).tickSize(0).tickPadding(8);
+			var xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(d3.time.days, 1).tickFormat(d3.time.format('%a')).tickSize(0).tickPadding(8);
 
 			var yAxis = d3.svg.axis().scale(y).orient('left').tickPadding(8).ticks(5).tickFormat(function(d) {
 				return "$" + d.toFixed(2);

@@ -1,18 +1,15 @@
 <register-modal params="baseURL: baseURL, threshold: threshold" class="modal fade" id="newPledge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></register-modal>
 
-<div class="text-xs-center">
-	<p style="border-radius: 3px"><img src="img/logoisolated2.png" height="120" />
-	</p>
-</div>
 <div class="card-deck-wrapper">
 	<div class="card-deck">
 		<div class="card text-xs-center">
 			<div class="card-block">
 				<div class="row">
 					<div class="col-xs-12">
-						<button role="button" class="btn btn-lg btn-danger card-title" data-toggle="modal" data-target="#newPledge">
+						<button role="button" class="btn btn-lg btn-danger card-title hidden-sm-down" data-toggle="modal" data-target="#newPledge">
 							Pledge to Donate
 						</button>
+						<a href="#register" role="button" class="btn btn-lg btn-danger card-title hidden-md-up" href="#register"> Pledge to Donate </a>
 						<br>
 						<ul class="card-text text-xs-left">
 							<li>
@@ -33,67 +30,121 @@
 				</div>
 				<br>
 				<br>
-				<div class="row">
-					<div class="col-xs-6">
-						<hr class="hr-blue">
+				<div class="hidden-sm-down">
+					<div class="row">
+						<div class="col-xs-6">
+							<hr class="hr-blue">
+						</div>
+						<div class="col-xs-2"></div>
+						<div class="col-xs-4">
+							<hr class="hr-green">
+						</div>
 					</div>
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4">
-						<hr class="hr-green">
+					<div class="row">
+						<div class="bernie-ltblue">
+							<div class="col-xs-2">
+								<p class="card-text">
+									Individual Pledges
+								</p>
+							</div>
+							<div class="col-xs-2">
+								<p class="card-text">
+									Ringmakers Yesterday
+								</p>
+							</div>
+							<div class="col-xs-2">
+								<p class="card-text">
+									Ringmakers Alltime
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-2"></div>
+						<div class="green">
+							<div class="col-xs-2">
+								<p class="card-text">
+									Pledged Yesterday
+								</p>
+							</div>
+							<div class="col-xs-2">
+								<p class="card-text">
+									Total Contributions
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="bernie-ltblue">
+							<div class="col-xs-2">
+								<h4 class="" data-bind="text: pledgesTotal"></h4>
+							</div>
+							<div class="col-xs-2">
+								<h4 class="" data-bind="text: prevCallers"></h4>
+							</div>
+							<div class="col-xs-2">
+								<h4 class="" data-bind="text: sumCallers"></h4>
+							</div>
+						</div>
+						<div class="col-xs-2"></div>
+						<div class="green">
+							<div class="col-xs-2">
+								<h4 class="" data-bind="text: prevRaised"></h4>
+							</div>
+							<div class="col-xs-2">
+								<h4 class="" data-bind="text: raised"></h4>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="bernie-ltblue">
-						<div class="col-xs-2">
-							<p class="card-text">
+				<div class="hidden-md-up text-xs-left">
+					<div class="row bernie-ltblue">
+						<div class="col-xs-9">
+							<h4 class="card-text">
 								Individual Pledges
-							</p>
+							</h4>
 						</div>
-						<div class="col-xs-2">
-							<p class="card-text">
+						<div class="col-xs-3 text-xs-right">
+							<h4 class="" data-bind="text: pledgesTotal"></h4>
+						</div>
+					</div>
+					<div class="row bernie-ltblue">
+						<div class="col-xs-9">
+							<h4 class="card-text">
 								Ringmakers Yesterday
-							</p>
+							</h4>
 						</div>
-						<div class="col-xs-2">
-							<p class="card-text">
+						<div class="col-xs-3 text-xs-right">
+							<h4 class="" data-bind="text: prevCallers"></h4>
+						</div>
+					</div>
+					<div class="row bernie-ltblue">
+						<div class="col-xs-9">
+							<h4 class="card-text">
 								Ringmakers Alltime
-							</p>
+							</h4>
+						</div>
+						<div class="col-xs-3 text-xs-right">
+							<h4 class="" data-bind="text: sumCallers"></h4>
 						</div>
 					</div>
-					<div class="col-xs-2"></div>
-					<div class="green">
-					<div class="col-xs-2">
-						<p class="card-text">
-							Pledged Yesterday
-						</p>
+					<div class="row green">
+						<div class="col-xs-9">
+							<h4 class="card-text">
+								Pledged Yesterday
+							</h4>
+						</div>
+						<div class="col-xs-3 text-xs-right">
+							<h4 class="" data-bind="text: prevRaised"></h4>
+						</div>
 					</div>
-					<div class="col-xs-2">
-						<p class="card-text">
-							Total Contributions
-						</p>
-					</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="bernie-ltblue">
-					<div class="col-xs-2">
-						<h4 class="" data-bind="text: pledgesTotal"></h4>
-					</div>
-					<div class="col-xs-2">
-						<h4 class="" data-bind="text: prevCallers"></h4>
-					</div>
-					<div class="col-xs-2">
-						<h4 class="" data-bind="text: sumCallers"></h4>
-					</div>
-					</div>
-					<div class="col-xs-2"></div>
-					<div class="green">
-					<div class="col-xs-2">
-						<h4 class="" data-bind="text: prevRaised"></h4>
-					</div>
-					<div class="col-xs-2">
-						<h4 class="" data-bind="text: raised"></h4>
-					</div>
+					<div class="row green">
+						<div class="col-xs-9">
+							<h4 class="card-text">
+								Raised Alltime
+							</h4>
+						</div>
+						<div class="col-xs-3 text-xs-right">
+							<h4 class="" data-bind="text: raised"></h4>
+						</div>
 					</div>
 				</div>
 				<hr>

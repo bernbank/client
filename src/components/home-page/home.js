@@ -31,7 +31,6 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 			self.sumCallers(data.total);
 			self.prevCallers(data.data[data.data.length-1].total);
 			self.histCallers(data.data);
-			console.debug(self.histCallers());
 		});
 		//$.getJSON(baseURL+'dailyCallLogs/total?date='+moment().subtract(1, 'days').format("YYYY[-]MM[-]DD"), function(data) {
 		// TODO: GET and set the other variables to populate the homepage and pass to the line-graph component
