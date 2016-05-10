@@ -31,7 +31,7 @@ define(["knockout", "text!./register.html", "jquery", 'knockout-validation'], fu
 				contentType : 'application/json',
 				dataType : "json",
 				url : this.baseURL + 'pledges/' + this.userEmail(),
-				data : data
+				data : JSON.stringify(data)
 			}).done(function(data) {
 				console.log(data);
 			});
