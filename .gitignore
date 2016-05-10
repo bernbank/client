@@ -6,3 +6,5 @@ bower_modules/
 # dist/
 
 *.md
+
+*.log

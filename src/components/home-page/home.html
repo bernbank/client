@@ -6,25 +6,29 @@
 			<div class="card-block">
 				<div class="row">
 					<div class="col-xs-12">
-						<button role="button" class="btn btn-lg btn-danger card-title hidden-sm-down" data-toggle="modal" data-target="#newPledge">
-							Pledge to Donate
+						<button role="button" class="pledgebtn btn btn-lg btn-danger card-title hidden-sm-down" data-toggle="modal" data-target="#newPledge">
+							PLEDGE TO DONATE
 						</button>
-						<a href="#register" role="button" class="btn btn-lg btn-danger card-title hidden-md-up" href="#register"> Pledge to Donate </a>
+						<a href="#register" role="button" class="btn btn-lg btn-danger card-title hidden-md-up" href="#register"> PLEDGE TO DONATE </a>
 						<br>
+                        <p class="tagline">
+                            Donate 1&cent; for each volunteer who makes <b data-bind="text: threshold"></b><b>+</b> calls in a day.
+                        </p>
 						<ul class="card-text text-xs-left">
 							<li>
-								Pledge to donate between <strong>1&cent;</strong> and <strong>5&cent;</strong> for every caller that makes at least <b data-bind="text: threshold"></b> calls in a day (Ringmakers) using <a href="https://berniepb.com" target="_blank">BerniePB.com</a>.
+								Click the button above to set up a pledge to donate between 1&cent; and 5&cent; every time a Bernie Sanders phone banking volunteer makes <b data-bind="text: threshold"></b><b>+</b> in a day. 
 							</li>
-
-							<li>
-								Every week we will email your suggested donation and a link that will take you to an <a href="https://actblue.com" target="_blank">ActBlue</a> fundraising page for Bernie 2016.
-							</li>
-							<li>
-								Your pledge is just a suggested donation to help encourage our wonderful volunteers to make a few more calls. You will be able to contribute any legal amount.
+                            <li>
+								Every week, we'll email you the amount your pledge is worth for that week and a link that will take you to a Bernie Sanders fundraising page to finalize your donation.
 							</li>
 							<li>
-								You may opt-out at any time simply by unsubscribing from our emails.
+								You may opt-out at any time by unsubscribing from our emails.
 							</li>
+                            <!--@avickers: I copied and pasted the data for the button from the top. I'd like to have a link here to BerniePB so that the callers have very clear instructions too.-->
+                        <button role="button" class="pledgebtn btn btn-lg btn-danger card-title hidden-sm-down" data-toggle="modal" data-target="#newPledge">
+							VOLUNTEER HERE
+						</button>
+						<a href="#register" role="button" class="btn btn-lg btn-danger card-title hidden-md-up" href="#register"> VOLUNTEER HERE </a>
 						</ul>
 					</div>
 				</div>

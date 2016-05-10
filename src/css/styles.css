@@ -104,3 +104,20 @@ path {
 #page {
 	margin-top: 0px;
 }
+
+.pledgebtn {
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+.bernbanklogo {
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-weight: 800;
+    font-size: 1.4em;
+    margin: 15px;
+    color: #147FD7;
+}

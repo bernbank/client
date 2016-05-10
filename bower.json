@@ -13,6 +13,7 @@
     "knockout-projections": "^1",
     "knockout-validation": "^2.0.3",
     "moment": "^2.13.0",
-    "jquery-mobile": "^1.4.5"
+    "jquery-mobile": "^1.4.5",
+    "d3": "^3.5.17"
   }
 }
