@@ -19,8 +19,8 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 	RegisterModal.prototype.postPledge = function() {
 		var errors = ko.validation.group(this);
 		var data = {
-					email : this.userEmail(),
-					amount : this.slider()
+					"email" : this.userEmail(),
+					"amount" : this.slider()
 			};
 
 		if (errors().length === 0) {
@@ -30,7 +30,7 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 				contentType : 'application/json',
 				dataType : "json",
 				url : this.baseURL + 'pledges/' + this.userEmail(),
-				data : JSON.stringify(data)
+				data : data
 			}).done(function(data) {
 				console.log(data);
 			});
