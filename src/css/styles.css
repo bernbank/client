@@ -124,7 +124,7 @@ path {
     color: #147FD7;
     font-family: 'Playfair Display SC', serif;*/
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin: 15px;
     color: #147FD7;
     font-family: 'Raleway', sans-serif;
@@ -132,9 +132,7 @@ path {
 
 .homepoints {
     font-family: 'Lora', serif;
-    font-size: 1em;
-    text-align: center;
-    content:none;
+    font-size: 1.2em;
 }
 
 .pledgetocall {
