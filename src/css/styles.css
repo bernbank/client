@@ -72,7 +72,7 @@ li {
 li:before {
 	content: "\f058";
 	font-family: FontAwesome;
-	color: red;
+	color: #ff5757;
 	margin-right: .4em;
 }
 
@@ -166,4 +166,9 @@ path {
 .foreveryvolunteer {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    font-size: 1.2em;
+}
+
+.wontbestoppeddiv {
+    padding: 10px;
 }
