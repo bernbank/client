@@ -18,6 +18,7 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		});
 		self.prevCallers = ko.observable(0);
 		self.sumCallers = ko.observable(0);
+		self.totaledYesterday = ko.observable(1.40);
 		self.histCallers = ko.observableArray([]);
 
 		LoadData(self);
@@ -30,6 +31,7 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		});
 		$.getJSON(baseURL+'dailyCallLogs/total', function(data) {
 			self.sumCallers(data.total);
+			self.totaledYesterday( (data.data[data.data.length-1].total * .01).toFixed(2) );
 			self.prevCallers(data.data[data.data.length-1].total);
 			self.histCallers(data.data);
 		});

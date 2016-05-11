@@ -6,30 +6,169 @@
 			<div class="card-block">
 				<div class="row">
 					<div class="col-xs-12">
-						<button role="button" class="btn btn-lg btn-danger card-title hidden-sm-down" data-toggle="modal" data-target="#newPledge">
-							Pledge to Donate
+						<button role="button" class="pledgebtn btn btn-lg btn-danger card-title hidden-sm-down" data-toggle="modal" data-target="#newPledge">
+							DONATE
 						</button>
-						<a href="#register" role="button" class="btn btn-lg btn-danger card-title hidden-md-up" href="#register"> Pledge to Donate </a>
+						<a href="#register" role="button" class="btn btn-lg btn-danger card-title hidden-md-up" href="#register"> DONATE </a>
 						<br>
-						<ul class="card-text text-xs-left">
-							<li>
-								Pledge to donate between <strong>1&cent;</strong> and <strong>5&cent;</strong> for every caller that makes at least <b data-bind="text: threshold"></b> calls in a day (Ringmakers) using <a href="https://berniepb.com" target="_blank">BerniePB.com</a>.
-							</li>
+                        <p class="tagline">
+                        Donate 1&cent; every time a caller makes 50+ calls in a day.
+                        </p>
+                        <p class="subhead">
+                        Donating here will <b>double</b> your impact.
+                        </p>                        
+                        <div class="row">
+							<ul class="homepoints card-text text-xs-left col-xs-7">
+								<li>
+                                Yesterday, a 1&cent; pledge would have totaled <!--CHANGE THIS TO A VARIABLE--> <b>$<span data-bind="text: totaledYesterday" >1.40</span></b>.</li>
+                                <li>
+								Every donation will increase volunteering by giving a direct incentive to make calls.
+                                </li>
+                                <li>
+                                If 1000 people donate here, 30 minutes of calling will bring in <b>$10</b>.
+                                </li>
+							</ul>
+							<div class="donatestats col-xs-5">
+                                <div class="col-xs-12">
+										<hr class="hr-blue">
+								</div>
+								<div class="donate-stats">
+									<div class="row donate-stats-numbers">
+										<div class="bernie-red">
+											<div class="col-xs-4">
+												<h4 class="" data-bind="text: pledgesTotal"></h4>
+											</div>
+										</div>
+										<div class="bernie-red">
+											<div class="col-xs-4">
+												<h4 class="" data-bind="text: prevRaised"></h4>
+											</div>
+											<div class="col-xs-4">
+												<h4 class="" data-bind="text: raised"></h4>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="bernie-red">
+											<div class="col-xs-4">
+												<p class="card-text">
+													Individual Pledges
+												</p>
+											</div>
+										</div>
+										<div class="bernie-red">
+											<div class="col-xs-4">
+												<p class="card-text">
+													Pledged Yesterday
+												</p>
+											</div>
+											<div class="col-xs-4">
+												<p class="card-text">
+													Total Contributions
+												</p>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+                        <hr class="pledgetocall"/>
+                        <a href="http://berniepb.com" target="_blank" class="btn btn-lg btn-danger">MAKE CALLS</a>
+						<br>
+                        <p class="tagline">
+                            Callers: make 50+ calls today, and Bernie will receive <!--CHANGE THIS TO A VARIABLE--> $<span data-bind="text: totaledYesterday" >1.40</span>
+                        </p>
+                        
+                        <div class="row">
+							<ul class="homepoints card-text text-xs-left col-xs-7 makecalls-bullet">
+								<li>
+									It takes about 30 minutes to make 50 calls.
+								</li>
+								<li>
+									In that time, <b>you</b> can directly bring in a <!--CHANGE THIS TO A VARIABLE--> $<span data-bind="text: totaledYesterday" >1.40</span> donation.
+								</li>
+								<li>
+									Click the button above to start making calls.
+								</li>
+							</ul>
 
-							<li>
-								Every week we will email your suggested donation and a link that will take you to an <a href="https://actblue.com" target="_blank">ActBlue</a> fundraising page for Bernie 2016.
+							<div class="col-xs-5">
+								<div class="row">
+									<div class="col-xs-12">
+										<hr class="hr-blue">
+									</div>
+								</div>
+								<div class="row donate-stats-numbers">
+									<div class="bernie-red">
+										<div class="col-xs-6">
+											<h4 class="" data-bind="text: prevCallers"></h4>
+										</div>
+										<div class="col-xs-6">
+											<h4 class="" data-bind="text: sumCallers"></h4>
+										</div>
+									</div>
+								</div>
+								<div class="stattext row">
+									<div class="bernie-red">
+										<div class="col-xs-6">
+											<p class="card-text">
+												Callers at 50+ Yesterday
+											</p>
+										</div>
+										<div class="col-xs-6">
+											<p class="card-text">
+												Callers at 50+ Since Launch
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+						
+						
+						<br />
+						
+                        <hr class="pledgetocall2"/>
+                        <p class="tagline">
+                            Why donate?
+                        </p>
+                        <ul class="homepoints card-text text-xs-left">
+                            <li>
+								<!--MAKE THESE VARIABLES-->The pledged delegates count is only 1705-1414, with 932 remaining. 
 							</li>
-							<li>
-								Your pledge is just a suggested donation to help encourage our wonderful volunteers to make a few more calls. You will be able to contribute any legal amount.
+                            <li>
+								Bernie needs 6.5 in 10 of the remaining votes to win the majority of pledged delegates, and he is likely to win most of the remaining states. 
 							</li>
-							<li>
-								You may opt-out at any time simply by unsubscribing from our emails.
+                            <li>
+								With the entire Republican party freed up to vote for anyone, this is very doable.
+							</li>
+                            <li>
+								It is mathematically <i>very unlikely</i> that any candidate will win the majority of total Democratic delegates. 
+							</li>
+                            <li>
+								Bernie Sanders is the only candidate in the world who wins every general election matchup.
+							</li>
+                            <li>
+								Hillary Clinton loses to Donald Trump in some polls; Bernie Sanders does not.
+							</li>
+                            <li>
+								Even if Bernie does not win the nomination, every vote he gets gives him more influence to change the official platform of the Democratic Party.
 							</li>
 						</ul>
+						
+						<hr class="pledgetocall"/>
+						
+                       <p class="tagline">Contact us at: Contact[at]BernBank[dot]com</p>
+                        
+                        <hr class="pledgetocalllast"/>
+                        
 					</div>
 				</div>
-				<br>
-				<br>
+				<!--
 				<div class="hidden-sm-down">
 					<div class="row">
 						<div class="col-xs-6">
@@ -147,10 +286,12 @@
 						</div>
 					</div>
 				</div>
-				<hr>
+				-->
 				<div class="row">
 					<line-graph params="hist: histCallers"></line-graph>
 				</div>
+				
+				
 			</div>
 		</div>
 	</div>
