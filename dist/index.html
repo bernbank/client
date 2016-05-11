@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+        <link href='https://fonts.googleapis.com/css?family=Lora|Raleway:300,600,500' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>BernBank</title>
 		<link rel="stylesheet" href="css.css">
-		<script src="scripts.js?v=003"></script>
+		<script src="scripts.js"></script>
+        
 	</head>
 	<body>
 		<div class="text-xs-center">
-			<p style="border-radius: 3px"><img src="img/logoisolated2.png" height="120" />
+			<p class="bernbanklogo" style="border-radius: 3px"><img src="img/logoisolated4.png" width="500" />
 			</p>
 		</div>
 		<!--<nav-bar params="route: route"></nav-bar>-->
 		<div id="page" class="container" data-bind="component: { name: route().page, params: route }"></div>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-77539578-1', 'auto');
+          ga('send', 'pageview');
+        </script>
 	</body>
 	<footer>
-		<p style="color: black; margin:5px;">
+		<p style="color: black; margin:11px 38px;">
 			<span>Designed by volunteers with <a href="https://coders.forsanders.com" style="color: white;">Coders for Sanders</a></span><span class="pull-right">Find out more at: <a href="https://www.berniesanders.com" style="color: white;">BernieSanders.com</a></span>
 		</p>
 	</footer>
