@@ -6,7 +6,7 @@
 			</button>
 			<h4 class="wontbestopped modal-title bernie-red">We will not be stopped</h4>
 		</div>
-		<div class="modal-body text-xs-center" style='background-image: url("img/bernie-port.jpg"); background-size: 100%;'>
+		<div class="belowwontbestopped modal-body text-xs-center" style='background-image: url("img/bernie-port.jpg"); background-size: 100%;'>
 			<!-- Validation messages -->
 			<div class="error-messages" data-bind="visible: errors().length > 0, foreach: errors">
 				<div class="alert alert-danger alert-dismissible fade in" role="alert">
@@ -17,10 +17,13 @@
 				</div>
 			</div>
 			<p class="foreveryvolunteer">
-				For every volunteer who makes <span data-bind="text: threshold"></span>+ calls in a day, I will to donate
+				For every volunteer who makes <span data-bind="text: threshold"></span>+ calls in a day, I will donate
 				<input id="slider1" type="range" min="1" max="5" step="1" data-bind="value: slider" />
 				<label class="label label-danger"><span data-bind="text: slider"></span>&cent;</label>
 				to Bernie's campaign.
+			</p>
+            <p class="foreveryvolunteer2">
+				We'll email you at the end of each week with your pledge total. Feel free to opt-out at any time.
 			</p>
 			<br>
 			<br>

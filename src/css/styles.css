@@ -80,6 +80,7 @@ hr.hr-blue {
 	height: 2px;
 	background: #147FD7;
 	border-radius: 3px;
+    margin-top: 11px;
 }
 
 hr.hr-green {
@@ -152,11 +153,13 @@ path {
 
 
 .donate-stats-numbers h4 {
-	font-size:42px;
+	font-size:3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 .wontbestopped {
-    text-align: left;
+    text-align: center;
     margin: 0px 0px 0px 25px;
     padding: 0px;
     font-size: 2em;
@@ -175,4 +178,30 @@ path {
 
 .makecalls-bullet {
 	padding-left:44px;
+}
+.foreveryvolunteer2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+.belowwontbestopped {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100,000000+100&1+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.donatestats {
+    font-family: 'Raleway', sans-serif;
+}
+.donate-stats {
+    font-family: 'Raleway', sans-serif;
+}
+
+.stattext {
+    font-family: 'Raleway', sans-serif;
+    font-size: .7em;
 }
