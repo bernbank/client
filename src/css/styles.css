@@ -187,7 +187,6 @@ path {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 1em;
-    text-shadow: 0 0 10px #ffffff;
 }
 
 .belowwontbestopped {
@@ -216,13 +215,26 @@ path {
     font-size: .7em;
 }
 
+.aGraph {
+    margin-top: 0px;
+}
+
+.pledgetocalllast {
+    color:#147FD7;
+    margin-top: 20px;
+    clear:both;
+    margin-bottom: 0px;
+}
+
+.pledgetocall2 {
+    color:#147FD7;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    clear:both;
+
 footer p {
 	font-size: 18px;
 }
-
-
-
-
 
 input[type=range]{
     /* fix for FF unable to apply focus style bug  */
@@ -255,4 +267,5 @@ input[type=range]:-moz-focusring{
 
 input[type=range]:focus::-moz-range-track {
     background: #ccc;
+>>>>>>> origin/bursteinz-branch
 }
