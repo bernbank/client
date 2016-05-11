@@ -70,7 +70,7 @@ li {
 }
 
 li:before {
-	content: "\f192";
+	content: "\f058";
 	font-family: FontAwesome;
 	color: red;
 	margin-right: .4em;
@@ -139,6 +139,7 @@ path {
     color:#147FD7;
     margin-top: 20px;
     margin-bottom: 25px;
+    clear:both;
 }
 
 .subhead {
@@ -147,4 +148,17 @@ path {
     margin: 25px;
     color: #147FD7;
     font-family: 'Raleway', sans-serif;
+}
+
+
+.donate-stats-numbers h4 {
+	font-size:42px;
+}
+
+.wontbestopped {
+    text-align: left;
+    margin: 0px 0px 0px 25px;
+    padding: 0px;
+    font-size: 2em;
+    font-family: 'Lora', sans-serif;
 }

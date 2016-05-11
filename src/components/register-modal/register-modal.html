@@ -1,10 +1,10 @@
 <div class="modal-dialog" role="document">
 	<div class="modal-content">
-		<div class="modal-header">
+		<div class="wontbestoppeddiv modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
-			<h4 class="modal-title bernie-red">We will not be stopped</h4>
+			<h4 class="wontbestopped modal-title bernie-red">We will not be stopped</h4>
 		</div>
 		<div class="modal-body text-xs-center" style='background-image: url("img/bernie-port.jpg"); background-size: 100%;'>
 			<!-- Validation messages -->
@@ -17,10 +17,10 @@
 				</div>
 			</div>
 			<p>
-				For every amazing volunteer making <span data-bind="text: threshold"></span> calls in a day, I pledge to donate
+				For every volunteer who makes <span data-bind="text: threshold"></span>+ calls in a day, I will to donate
 				<input id="slider1" type="range" min="1" max="5" step="1" data-bind="value: slider" />
 				<label class="label label-danger"><span data-bind="text: slider"></span>&cent;</label>
-				to help Bernie Sanders win.
+				to Bernie Sanders's campaign.
 			</p>
 			<br>
 			<br>
@@ -30,8 +30,8 @@
 			<br>
 			<form>
 				<fieldset class="form-group">
-					<label for="email" class="bernie-ltgrey">Email address</label>
-					<input type="email" class="form-control" id="email" placeholder="Enter email" required data-bind="textInput: userEmail">
+					<!--<label for="email" class="bernie-ltgrey">Email address</label>-->
+					<input type="email" class="form-control" id="email" placeholder="Email Address" required data-bind="textInput: userEmail">
 				</fieldset>
 				<button type="button" class="btn btn-danger" data-bind="click: postPledge">
 					I'm part of the Revolution
