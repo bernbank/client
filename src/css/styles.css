@@ -18,6 +18,10 @@
 	color: #EDF0F7;
 }
 
+.red-text {
+	color: #C9302C;
+}
+
 .green {
 	color: rgb(143,203,143);
 }
@@ -187,21 +191,68 @@ path {
 }
 
 .belowwontbestopped {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100,000000+100&1+0,0+100 */
-    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	color:white;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+
 }
 
-.donatestats {
-    font-family: 'Raleway', sans-serif;
+.wrapper-stopped {
+	background-image: url("../img/bernie-port.jpg"); background-size: 100%;
+}
+
+
+.donatestats , .donatestats  p{
+    font-family: 'Raleway', sans-serif !important;
 }
 .donate-stats {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 .stattext {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
     font-size: .7em;
+}
+
+footer p {
+	font-size: 18px;
+}
+
+
+
+
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+
+
+    /*required for proper track sizing in FF*/
+    width: 300px;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #ccc;
 }
