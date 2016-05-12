@@ -194,15 +194,6 @@ path {
     font-size: 1em;
 }
 
-.belowwontbestopped {
-	color:white;
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
-
-}
-
 .wrapper-stopped {
 	background-image: url("../img/bernie-port.jpg"); background-size: 100%;
 }
@@ -237,6 +228,7 @@ path {
 
 footer p {
 	font-size: 18px;
+	font-family: 'Raleway', sans-serif !important;
 }
 
 input[type=range]{
@@ -281,3 +273,13 @@ input[type=range]:focus::-moz-range-track {
 .stattext p , .donate-stats p{
 	font-size:16px !important;
 }
+
+
+.belowwontbestopped {
+	color:white;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+}
+
+
