@@ -115,6 +115,11 @@ path {
     margin-bottom: 10px;
 }
 
+.bernbanklogo img{
+	/*width:70%;*/
+}
+
+
 .tagline {
     /*font-weight: 600;
     font-size: 1.4em;
@@ -351,4 +356,13 @@ input[type=range]:focus::-moz-range-track {
     font-size: 15px;
 }
 
+@media only screen and (max-device-width: 767px) {
+	.sharebuttons {
+		display:block;
+		clear:both;
+		position:relative;
+		float:none;
+		right:0;
+	}
+}
 
