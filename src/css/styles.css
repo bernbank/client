@@ -288,3 +288,7 @@ input[type=range]:focus::-moz-range-track {
     font-family: 'Lora', serif;
     font-size: 18px;
 }
+
+.lightred {
+    color: #ff8383;
+}
