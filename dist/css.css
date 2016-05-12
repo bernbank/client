@@ -296,6 +296,7 @@ input[type=range]:focus::-moz-range-track {
 .actbluelink {
     font-family: 'Lora', serif;
     font-size: 18px;
+    color: #EF3C37;
 }
 
 .lightred {
