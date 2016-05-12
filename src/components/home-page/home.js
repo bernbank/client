@@ -11,7 +11,7 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		self.amount = ko.observable(0);
 		self.prevRaised = ko.pureComputed(function() {
 			//return '$' +(self.amount() * self.prevCallers() * 0.01).toFixed(2);
-			return '$' +(self.prevCallers() * self.totaledYesterday() * 0.01).toFixed(2);
+			return '$' +(self.prevCallers() * self.pledgesTotal() * 0.01).toFixed(2);
 		});
 		self.pledgesTotal = ko.observable(0);
 		self.perCaller = ko.pureComputed(function() {
