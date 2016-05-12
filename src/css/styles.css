@@ -55,13 +55,6 @@ h4 {
 	font-weight: 600;
 }
 
-a {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	color: #EF3C37;
-}
-
 ul {
 	list-style-type: none;
 	color: #147FD7;
@@ -296,4 +289,7 @@ input[type=range]:focus::-moz-range-track {
 
 .lightred {
     color: #ff8383;
+}
+
+.fb-share-button {
 }
