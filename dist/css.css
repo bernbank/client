@@ -242,6 +242,11 @@ footer p {
 	font-family: 'Raleway', sans-serif !important;
 }
 
+footer a {
+	font-family: 'Raleway', sans-serif !important;
+}
+
+
 input[type=range]{
     /* fix for FF unable to apply focus style bug  */
 
