@@ -292,4 +292,13 @@ input[type=range]:focus::-moz-range-track {
 }
 
 .fb-share-button {
+    float: right;
+    margin-left: 5px;
+    margin-top: 8px;
 }
+
+.share-email {
+	float: right;
+}
+
+
