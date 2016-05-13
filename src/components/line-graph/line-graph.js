@@ -3,9 +3,9 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 	function LineGraph(params) {
 		params.hist.subscribe(function(data) {
 			var x = data.length;
-			if(x>10){
+			if(x>7){
 				x--;
-				data = data.slice(x-10,x);
+				data = data.slice(x-7);
 			}
 			Draw(data);
 		});
@@ -22,7 +22,7 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 
 			var color = d3.interpolateRgb("#0073DA", "#EF3C37");
 			var max = d3.max(data, function(d) {
-				return d.total * 0.01;
+				return d.total;
 			});
 
 			var x = d3.time.scale().domain([new Date(data[0].date), d3.time.day.offset(new Date(data[data.length - 1].date), 1)]).rangeRound([0, width - margin.left - margin.right]);
@@ -32,19 +32,19 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 			var xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(d3.time.days, 1).tickFormat(d3.time.format('%a')).tickSize(0).tickPadding(8);
 
 			var yAxis = d3.svg.axis().scale(y).orient('left').tickPadding(8).ticks(5).tickFormat(function(d) {
-				return "$" + d.toFixed(2);
+				return d;
 			});
 
 			var svg = d3.select('#graph').append('svg').attr('class', 'chart').attr('width', width).attr('height', height).append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
 
 			svg.selectAll('.chart').data(data).enter().append('rect').attr('class', 'bar').style("fill", function(d, i) {
-				return color(d.total * 0.01 / max);
+				return color(d.total / max);
 			}).attr('x', function(d) {
 				return x(new Date(d.date));
 			}).attr('y', function(d) {
-				return height - margin.top - margin.bottom - (height - margin.top - margin.bottom - y(d.total * 0.01));
-			}).attr('width', (width - margin.left - margin.right) / 11).attr('height', function(d) {
-				return height - margin.top - margin.bottom - y(d.total * 0.01);
+				return height - margin.top - margin.bottom - (height - margin.top - margin.bottom - y(d.total));
+			}).attr('width', function(d){ return (width - margin.left - margin.right) / (data.length+1); }).attr('height', function(d) {
+				return height - margin.top - margin.bottom - y(d.total);
 			});
 
 			svg.append('g').attr('class', 'x axis').attr('transform', 'translate(15, ' + (height - margin.top - margin.bottom) + ')').call(xAxis);
