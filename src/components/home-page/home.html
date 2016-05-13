@@ -55,14 +55,13 @@
                         <div class="row">
 							<ul class="homepoints card-text text-xs-left col-md-7 col-xs-12">
                                 <li>
-								Every donation will increase volunteering by giving a direct incentive to make calls. If they hit 50+ calls, Bernie will receive a donation.
-                                </li>
-                                <li>We don't take any money directly. Click donate, and we'll email you at the end of each week with the link to a secure <a href="https://secure.actblue.com/contribute/page/bernbank" target="_blank" class="actbluelink">ActBlue</a> page where you can fulfill your pledge.
+									Every donation will increase volunteering by giving a direct incentive to make calls. If they hit 50+ calls, Bernie will receive a donation.
                                 </li>
                                 <li>
-                                Yesterday, a 1&cent; pledge would have totaled <!--CHANGE THIS TO A VARIABLE--> <b>$<span data-bind="text: totaledYesterday" >1.40</span></b> (see below).</li>
+                                	We don't take any money directly. Click donate, and we'll email you at the end of each week with the link to a secure <a href="https://secure.actblue.com/contribute/page/bernbank" target="_blank" class="actbluelink">ActBlue</a> page where you can fulfill your pledge.
+                                </li>
                                 <li>
-                                If 1000 people donate here, for example, 30 minutes of calling will bring a donation of <b>$10</b>.
+                                	Yesterday, a 1&cent; pledge would have totaled <b>$<span data-bind="text: totaledYesterday" ></span></b> (see below).
                                 </li>
 							</ul>
 							<div class="donatestats col-md-5 col-xs-12">
@@ -72,34 +71,32 @@
 								<div class="donate-stats">
 									<div class="row donate-stats-numbers">
 										<div class="bernie-red">
-											<div class="col-xs-4">
+											<div class="col-xs-6">
 												<h4 class="" data-bind="text: pledgesTotal"></h4>
 											</div>
-										</div>
-										<div class="bernie-red">
-											<div class="col-xs-4">
+											<div class="col-xs-6">
 												<h4 class="" data-bind="text: prevRaised"></h4>
-											</div>
-											<div class="col-xs-4">
-												<h4 class="" data-bind="text: raised"></h4>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="bernie-red">
-											<div class="col-xs-4">
+											<div class="col-xs-6">
 												<p class="card-text">
 													Individual Pledges
 												</p>
 											</div>
-										</div>
-										<div class="bernie-red">
-											<div class="col-xs-4">
+											<div class="col-xs-6">
 												<p class="card-text">
 													Pledged Yesterday
 												</p>
 											</div>
-											<div class="col-xs-4">
+										</div>
+										<div class="row bernie-red donate-stats-numbers">
+											<div class="col-xs-12">
+												<h4 class="" data-bind="text: raised"></h4>
+											</div>
+											<div class="col-xs-12">
 												<p class="card-text">
 													Total Contributions
 												</p>
@@ -107,14 +104,14 @@
 										</div>
 									</div>
 								</div>
-                                <p class="sincelaunching bernie-ltblue">Since launching <!--MAKE VARIABLE--><b>X</b> days ago.</p>
+                                <p class="sincelaunching bernie-ltblue">Since launching <b data-bind="text: lifetime"></b> days ago.</p>
 							</div>
 						</div>
                         <hr class="pledgetocall"/>
                         <a href="http://berniepb.com" target="_blank" class="btn btn-lg btn-danger">MAKE CALLS</a>
 						<br>
                         <p class="tagline">
-                            Callers: If you make 50+ calls today, Bernie will receive $<span data-bind="text: totaledYesterday" >1.40</span>.
+                            Callers: If you make 50+ calls today, Bernie will receive $<span data-bind="text: amount" ></span>.
                         </p>
                         
                         <div class="row">
@@ -123,7 +120,7 @@
 									It takes about 30 minutes to make 50 calls.
 								</li>
 								<li>
-									In that time, <b>you</b> can directly bring in a $<span data-bind="text: totaledYesterday" >1.40</span> donation.
+									In that time, <b>you</b> can directly bring in a $<span data-bind="text: amount" ></span> donation.
 								</li>
 								<li>
 									Click the button above to start making calls.
@@ -162,7 +159,7 @@
 									</div>
 								</div>
                                 
-                                <p class="sincelaunching bernie-ltblue">Since launching <!--MAKE VARIABLE--><b>X</b> days ago.</p>
+                                <p class="sincelaunching bernie-ltblue">Since launching <b data-bind="text: lifetime"></b> days ago.</p>
 
 							</div>
                             
