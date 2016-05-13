@@ -6,28 +6,27 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		const self = this;
 		self.baseURL = baseURL;
 
-		self.threshold = ko.observable('50');
+		self.threshold = ko.observable('30');
 		self.raised = ko.observable('$0');
 		self.amount = ko.observable(0);
 		self.prevRaised = ko.pureComputed(function() {
-			//return '$' +(self.amount() * self.prevCallers() * 0.01).toFixed(2);
-			return '$' +(self.prevCallers() * self.pledgesTotal() * 0.01).toFixed(2);
+			return  '$'+ (self.amount() * self.prevCallers()).toFixed(2);
 		});
 		self.pledgesTotal = ko.observable(0);
-		self.perCaller = ko.pureComputed(function() {
-			return '$' + (self.pledgesTotal() * 0.01).toFixed(2);
-		});
 		self.prevCallers = ko.observable(0);
 		self.sumCallers = ko.observable(0);
 		self.totaledYesterday = ko.observable(1.40);
 		self.histCallers = ko.observableArray([]);
+		self.lifetime = ko.pureComputed(function() {
+			return self.histCallers().length;
+		});
 
 		LoadData(self);
 	}
 
 	function LoadData(self) {
 		$.getJSON(baseURL+'pledges/?total', function(data) {
-			self.amount(data.amount);
+			self.amount((data.amount*0.01).toFixed(2));
 			self.pledgesTotal(data.total);
 		});
 		$.getJSON(baseURL+'dailyCallLogs/total', function(data) {
