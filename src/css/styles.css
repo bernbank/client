@@ -196,7 +196,8 @@ path {
 }
 
 .wrapper-stopped {
-	background-image: url("../img/bernie-port.jpg"); background-size: 100%;
+	background-image: url("../img/bernie-port.jpg"); 
+	background-size:auto 100%;
 }
 
 
@@ -281,7 +282,7 @@ input[type=range]:focus::-moz-range-track {
 
 
 
-.belowwontbestopped {
+.belowwontbestopped , .dontstopme{
 	color:white;
 	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
@@ -357,6 +358,10 @@ input[type=range]:focus::-moz-range-track {
     font-size: 15px;
 }
 
+.donate-stats .col-xs-4 {
+	padding:0;
+}
+
 @media only screen and (max-device-width: 767px) {
 	.sharebuttons {
 		display:block;
@@ -367,11 +372,11 @@ input[type=range]:focus::-moz-range-track {
 	}
 	
 	.stattext p , .donate-stats p{
-		font-size:10px !important;
+		font-size:15px !important;
 	}
 	
 	.donate-stats-numbers h4 {
-		font-size: 2.5em;
+		font-size: 2.9em;
 	}
 }
 
@@ -382,11 +387,11 @@ input[type=range]:focus::-moz-range-track {
 	}
 	
 	.stattext p , .donate-stats p{
-		font-size:13px !important;
+		font-size:15px !important;
 	}
 	
 	.donate-stats-numbers h4 {
-		font-size: 2.0em;
+		font-size: 2.3em;
 	}
 	
 }
@@ -405,3 +410,14 @@ input[type=range]:focus::-moz-range-track {
 
 }
 
+
+
+.wrapper-stopped-2 {
+  background-image: url("../img/bernie-port.jpg");
+  background-size: auto 100%;
+  background-position: center center;
+}
+
+.wrapper-stopped-2  .card {
+	/*background:transparent !important;*/
+}

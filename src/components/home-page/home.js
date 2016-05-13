@@ -19,8 +19,15 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		});
 		self.prevCallers = ko.observable(0);
 		self.sumCallers = ko.observable(0);
+		self.sumCallersTmp = ko.observable(0);
 		self.totaledYesterday = ko.observable(1.40);
 		self.histCallers = ko.observableArray([]);
+
+		var day_start=new Date("May 13 2016");
+		var day_end=new Date();
+		var total_days = Math.max(Math.floor((day_end - day_start) / (1000 * 60 * 60 * 24)), 0);
+
+		self.daysSinceStart = ko.observable(total_days);
 
 		LoadData(self);
 	}
@@ -31,6 +38,13 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 			self.pledgesTotal(data.total);
 		});
 		$.getJSON(baseURL+'dailyCallLogs/total', function(data) {
+			
+			var day_start=new Date("May 13 2016");
+			var day_today=new Date();
+			if (day_start < day_today) {
+				self.sumCallersTmp(data.total);
+			}
+			
 			self.sumCallers(data.total);
 			self.totaledYesterday( (data.data[data.data.length-1].total * .01).toFixed(2) );
 			self.prevCallers(data.data[data.data.length-1].total);
