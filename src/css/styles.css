@@ -113,7 +113,10 @@ path {
 .bernbanklogo {
     margin: 10px;
     margin-bottom: 10px;
+    text-align:center;
 }
+
+
 
 .bernbanklogo img{
 	/*width:70%;*/
@@ -155,7 +158,7 @@ path {
 
 
 .donate-stats-numbers h4 {
-	font-size:3em;
+	font-size:2.7em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
@@ -275,9 +278,7 @@ input[type=range]:focus::-moz-range-track {
 }
 
 
-.stattext p , .donate-stats p{
-	font-size:16px !important;
-}
+
 
 
 .belowwontbestopped {
@@ -364,5 +365,43 @@ input[type=range]:focus::-moz-range-track {
 		float:none;
 		right:0;
 	}
+	
+	.stattext p , .donate-stats p{
+		font-size:10px !important;
+	}
+	
+	.donate-stats-numbers h4 {
+		font-size: 2.5em;
+	}
+}
+
+@media only screen and (min-device-width: 767px) {
+	.bernbanklogo img{
+		width:500px;
+		display:inline;
+	}
+	
+	.stattext p , .donate-stats p{
+		font-size:13px !important;
+	}
+	
+	.donate-stats-numbers h4 {
+		font-size: 2.0em;
+	}
+	
+}
+
+@media only screen and (min-device-width: 991px) {	
+	.donate-stats-numbers h4 {
+		font-size: 2.8em;
+	}
+
+}
+
+@media only screen and (min-device-width: 1200px) {	
+	.donate-stats-numbers h4 {
+		font-size: 3em;
+	}
+
 }
 
