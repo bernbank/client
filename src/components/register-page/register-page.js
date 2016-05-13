@@ -2,7 +2,7 @@ define(["knockout", "text!./register.html", "jquery", 'knockout-validation'], fu
 
 	function Register(route) {
 		this.baseURL = "http://bernbank.com/api/";
-		this.threshold = "50";
+		this.threshold = "30";
 		this.slider = ko.observable(1);
 
 		ko.validation.init({
