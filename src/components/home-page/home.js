@@ -26,7 +26,6 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 
 	function LoadData(self) {
 		$.getJSON(baseURL+'pledges/?total', function(data) {
-			console.log(data.amount);
 			self.amount((data.amount*0.01).toFixed(2));
 			self.pledgesTotal(data.total);
 		});
