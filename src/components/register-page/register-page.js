@@ -33,7 +33,7 @@ define(["knockout", "text!./register.html", "jquery", 'knockout-validation'], fu
 				url : this.baseURL + 'pledges/' + this.userEmail(),
 				data : JSON.stringify(data)
 			}).done(function(data) {
-				$(".belowwontbestopped").html('<div class="thankyou">Thank you for your support!</div>');
+				$(".dontstopme").html('<div class="thankyou">Thank you for your support!</div>');
 			});
 			//$("#newPledge").modal('hide');
 		} else {
