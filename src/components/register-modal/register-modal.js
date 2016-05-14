@@ -32,9 +32,10 @@ define(['knockout', 'text!./register-modal.html', 'knockout-validation'], functi
 				url : this.baseURL + 'pledges/' + this.userEmail(),
 				data : JSON.stringify(data)
 			}).done(function(data) {
-				console.log(data);
+				$(".belowwontbestopped").html('<div class="thankyou">Thank you for your support!</div>');
+				
 			});
-			$("#newPledge").modal('hide');
+			//$("#newPledge").modal('hide');
 		} else {
 			this.errors(errors());
 			return false;
