@@ -427,10 +427,10 @@ input[type=range]:focus::-moz-range-track {
 
 
 .wrapper-stopped-2 {
-  background-size: auto 100%;
-/*background-image: url("../img/bernie-port.jpg");
+  background-image: url("../img/bernie-port.jpg");
+  /*background-size: auto 100%;*/
   background-size: 120% auto;
-  background-position: center center;*/
+  background-position: center center;
 }
 
 .wrapper-stopped-2  .card {
