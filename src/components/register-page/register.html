@@ -1,5 +1,5 @@
-<div class="wrapper-stopped-2">
-	<div class="card card-block text-xs-center dontstopme">
+<div class="wrapper-stopped-2 bernie-ltblue">
+	<div class="card card-block text-xs-center">
 		<!-- Validation messages -->
 		<div class="error-messages" data-bind="visible: errors().length > 0, foreach: errors">
 			<div class="alert alert-danger alert-dismissible fade in" role="alert">
@@ -9,20 +9,26 @@
 				<span data-bind="text: $data"></span>
 			</div>
 		</div>
-		<h3 class="text-justify">
-			For every amazing volunteer making <span data-bind="text: threshold"></span> calls in a day, I pledge to donate
-			<input id="slider1" type="range" min="1" max="5" step="1" data-bind="value: slider" data-show-value="true" />
-			<label class="label label-danger"><span data-bind="text: slider"></span>&cent;</label>
-			to help Bernie Sanders win.
-		</h3>
+                <p class="foreveryvolunteer">
+					For every volunteer who makes <span data-bind="text: threshold"></span>+ calls in a day, I will donate
+					<input id="slider1" type="range" min="1" max="10" step="1" data-bind="value: slider" />
+					<label class="label label-danger"><span data-bind="text: slider"></span>&cent;</label>
+					to Bernie's campaign.
+				</p>
+				<p class="foreveryvolunteer2">
+					We'll email you at the end of each week with your pledge total. Feel free to opt-out at any time.
+				</p>
+                <p class="foreveryvolunteer2">
+					You can donate any amount right now <a href="https://secure.actblue.com/contribute/page/bernbank" target="_blank" class="lightred">here</a>.
+				</p>
 		<hr>
 		<form>
 			<fieldset class="form-group">
-				<label for="email" class="">Email address</label>
+				<label for="email" class="">Email Address</label>
 				<input type="email" class="form-control" id="email" placeholder="Enter email" required data-bind="textInput: userEmail">
 			</fieldset>
 			<button type="button" class="btn btn-lg btn-danger" data-bind="click: postPledge">
-				I'm part of the Revolution
+				COUNT ME IN!
 			</button>
 		</form>
 	</div>
