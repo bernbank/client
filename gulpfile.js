@@ -49,10 +49,11 @@ gulp.task('css', function () {
 
 // Copies index.html, replacing <script> and <link> tags to reference production URLs
 gulp.task('html', function() {
+    var random = ( Math.random() * 1000000000000000000 ) ;
     return gulp.src('./src/index.html')
         .pipe(htmlreplace({
-            'css': 'css.css',
-            'js': 'scripts.js'
+            'css': 'css.css?v=' + random + ".css",
+            'js': 'scripts.js?v=' + random + ".js"
         }))
         .pipe(gulp.dest('./dist/'));
 });
