@@ -14,6 +14,7 @@
     "knockout-validation": "^2.0.3",
     "moment": "^2.13.0",
     "d3": "^3.5.17",
-    "jquery-mobile": "^1.4.5"
+    "jquery-mobile": "^1.4.5",
+    "components-bootstrap": "#4"
   }
 }
