@@ -12,6 +12,9 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		self.prevRaised = ko.pureComputed(function() {
 			return  '$'+ (self.amount() * self.prevCallers()).toFixed(2);
 		});
+		self.totalRaised = ko.pureComputed(function() {
+			return  '$'+ (self.amount() * self.sumCallers() + self.totalDonated()).toFixed(2);
+		});
 		self.pledgesTotal = ko.observable(0);
 		self.prevCallers = ko.observable(0);
 		self.sumCallers = ko.observable(0);
@@ -21,7 +24,7 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		self.lifetime = ko.pureComputed(function() {
 			return self.histCallers().length;
 		});
-      self.totalDonated = ko.observable('$0');
+      self.totalDonated = ko.observable(0);
       self.totalDonors = ko.observable(0);
 
 		var day_start=new Date("May 13 2016");
@@ -39,7 +42,7 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 			self.pledgesTotal(data.total);
 		});
 		$.getJSON(baseURL+'pledges/donated', function(data) {
-			self.totalDonated('$'+(data['total-donated']*0.01).toFixed(2));
+			self.totalDonated(data['total-donated']*0.01).toFixed(2);
 			self.totalDonors(data['total-donors']);
 		});
 		$.getJSON(baseURL+'dailyCallLogs/total', function(data) {
