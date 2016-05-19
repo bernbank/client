@@ -24,8 +24,8 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		self.lifetime = ko.pureComputed(function() {
 			return self.histCallers().length;
 		});
-      self.totalDonated = ko.observable(0);
-      self.totalDonors = ko.observable(0);
+		self.totalDonated = ko.observable(0);
+		self.totalDonors = ko.observable(0);
 
 		var day_start=new Date("May 13 2016");
 		var day_end=new Date();
@@ -42,7 +42,7 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 			self.pledgesTotal(data.total);
 		});
 		$.getJSON(baseURL+'pledges/donated', function(data) {
-			self.totalDonated(data['total-donated']*0.01).toFixed(2);
+			self.totalDonated(data['total-donated']*0.01);
 			self.totalDonors(data['total-donors']);
 		});
 		$.getJSON(baseURL+'dailyCallLogs/total', function(data) {
