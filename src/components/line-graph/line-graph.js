@@ -3,10 +3,12 @@ define(['knockout', 'text!./line-graph.html', "d3"], function(ko, templateMarkup
 	function LineGraph(params) {
 		params.hist.subscribe(function(data) {
 			var x = data.length;
+			/*
 			if(x>7){
 				x--;
 				data = data.slice(x-7);
 			}
+			*/
 			Draw(data);
 		});
 
