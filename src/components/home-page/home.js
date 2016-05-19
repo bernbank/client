@@ -27,7 +27,7 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
       self.totalDonated = ko.observable(0);
       self.totalDonors = ko.observable(0);
 
-		var day_start=new Date("May 12 2016");
+		var day_start=new Date("May 13 2016");
 		var day_end=new Date();
 		var total_days = Math.max(Math.floor((day_end - day_start) / (1000 * 60 * 60 * 24)), 0);
 
