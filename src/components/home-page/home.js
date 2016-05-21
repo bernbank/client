@@ -19,12 +19,20 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 		self.prevCallers = ko.observable(0);
 		self.sumCallers = ko.observable(0);
 		self.sumCallersTmp = ko.observable(0);
+		self.weeklyCallers = ko.observable(0);
+		self.weeklyPledges = ko.pureComputed(function() {
+			return  '$'+ (self.amount() * self.weeklyCallers()).toFixed(2);
+		});		
 		self.totaledYesterday = ko.observable(1.40);
 		self.histCallers = ko.observableArray([]);
 		self.lifetime = ko.pureComputed(function() {
 			return self.histCallers().length;
 		});
 		self.totalDonated = ko.observable(0);
+		self.totalDonatedFormatted = ko.pureComputed(function() {
+			return  '$'+ self.totalDonated().toFixed(2);
+		});		
+
 		self.totalDonors = ko.observable(0);
 
 		var day_start=new Date("May 13 2016");
@@ -58,6 +66,9 @@ define(["knockout", "text!./home.html", "jquery","moment"], function(ko, homeTem
 			self.prevCallers(data.data[data.data.length-1].total);
 			self.histCallers(data.data);
 		});
+		$.getJSON(baseURL+'dailyCallLogs/currentWeekTotal', function(data) {
+			self.weeklyCallers(data);
+		});		
 		//$.getJSON(baseURL+'dailyCallLogs/total?date='+moment().subtract(1, 'days').format("YYYY[-]MM[-]DD"), function(data) {
 		// TODO: GET and set the other variables to populate the homepage and pass to the line-graph component
 	}
